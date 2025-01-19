@@ -58,11 +58,18 @@
   position: relative;
   display: inline-block;
   font-size: 64px;
+  height: 64px;
   color: var(--title-color);
   margin-bottom: 49px;
   transition: all 500ms ease;
 }
-
+.industries-block-one .inner-box .icon-box svg{
+  width: 100%;
+  height: 64px;
+}
+.industries-block-one .inner-box:hover .icon-box svg{
+  fill: white;
+}
 .industries-block-one .inner-box:hover .icon-box{
   color: #fff;
 }
@@ -82,10 +89,13 @@
 }
 
 .industries-block-one .inner-box p{
-  line-height: 24px;
+  /* line-height: 24px; */
+  line-height: 1.75;
+  font-size: 13px;
   transition: all 500ms ease;
 }
 
+.industries-block-one .inner-box:hover h3,
 .industries-block-one .inner-box:hover h3 a,
 .industries-block-one .inner-box:hover p{
   color: #fff;
