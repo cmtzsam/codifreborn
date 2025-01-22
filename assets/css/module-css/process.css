@@ -197,9 +197,9 @@
   transition: all 500ms ease;
 }
 
-.content_block_two .content-box .inner-box .single-item:hover:after{
+/* .content_block_two .content-box .inner-box .single-item:hover:after{
   opacity: 1;
-}
+} */
 
 .content_block_two .content-box .inner-box .single-item:last-child:before,
 .content_block_two .content-box .inner-box .single-item:last-child:after{

@@ -1418,7 +1418,8 @@ button.ltr {
   font-size: 32px;
   line-height: 40px;
   font-family: var(--title-font);
-  color: var(--title-color);
+  color: white;
+  /* color: var(--title-color); */
   margin-right: 280px;
 }
 
