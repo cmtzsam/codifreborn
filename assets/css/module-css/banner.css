@@ -2,7 +2,7 @@
 /** banner-section **/
 
 .banner-section{
-  padding: 80px 0px;
+  /* padding: 80px 0px; */
 }
 
 .banner-section .pattern-layer{
@@ -175,7 +175,7 @@
 .banner-style-two{
   position: relative;
   background: var(--secondary-color);
-  padding: 240px 0px 250px 0px;
+  /* padding: 240px 0px 250px 0px; */
 }
 
 .banner-style-two .bg-layer{
