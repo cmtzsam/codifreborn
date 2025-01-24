@@ -1,0 +1,183 @@
+/* inter-300 - latin */
+@import url("oldcss/bootstrap.css");
+@import url("oldcss/style.css");
+@import url("oldcss/color.css");
+@import url("oldcss/responsive.css");
+@import url("oldcss/elpath.css");
+@import url("oldcss/module-css/about.css ");
+@import url("oldcss/module-css/apps.css ");
+@import url("oldcss/module-css/banner.css ");
+@import url("oldcss/module-css/blog-details.css ");
+@import url("oldcss/module-css/blog-sidebar.css ");
+@import url("oldcss/module-css/category.css ");
+@import url("oldcss/module-css/chooseus.css ");
+@import url("oldcss/module-css/clients.css ");
+@import url("oldcss/module-css/contact.css ");
+@import url("oldcss/module-css/download.css ");
+@import url("oldcss/module-css/error.css ");
+@import url("oldcss/module-css/faq.css ");
+@import url("oldcss/module-css/featured.css ");
+@import url("oldcss/module-css/footer.css ");
+@import url("oldcss/module-css/funfact.css ");
+@import url("oldcss/module-css/header.css ");
+@import url("oldcss/module-css/industries.css ");
+@import url("oldcss/module-css/job-details.css ");
+@import url("oldcss/module-css/job.css ");
+@import url("oldcss/module-css/login.css ");
+@import url("oldcss/module-css/news.css ");
+@import url("oldcss/module-css/page-title.css ");
+@import url("oldcss/module-css/portfolio.css ");
+@import url("oldcss/module-css/pricing.css ");
+@import url("oldcss/module-css/process.css ");
+@import url("oldcss/module-css/profile.css ");
+@import url("oldcss/module-css/service-details.css ");
+@import url("oldcss/module-css/service.css ");
+@import url("oldcss/module-css/subscribe.css ");
+@import url("oldcss/module-css/team.css ");
+@import url("oldcss/module-css/testimonial.css ");
+@import url("oldcss/module-css/training.css ");
+@import url("oldcss/module-css/video.css ");
+@import url("oldcss/module-css/welcome.css");
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/inter-v18-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/inter-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/inter-v18-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/inter-v18-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/inter-v18-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/outfit-v11-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/outfit-v11-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/outfit-v11-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/outfit-v11-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.banner-section.bannercodif .content-box h1, .banner-section.bannercodif .content-box h2 {
+  font-size: 60px;
+}
+@media (width < 767px) {
+  .banner-section.bannercodif .content-box h1, .banner-section.bannercodif .content-box h2 {
+    font-size: 40px;
+  }
+}
+.banner-section.bannercodif .pattern-layer {
+  background-position: 100% 100%;
+}
+.banner-section.bannercodif .btn-one {
+  background: var(--theme-color) !important;
+  color: white !important;
+}
+.banner-section.bannercodif .btn-one:hover {
+  color: white !important;
+}
+.banner-section.bannercodif .btn-one::before, .banner-section.bannercodif .btn-one::after {
+  display: none;
+}
+
+@media (width < 767px) {
+  .industries-section .inner-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (width < 767px) {
+  .industries-section .industries-block-one {
+    width: 50%;
+    display: flex;
+    border-bottom: 0 !important;
+  }
+}
+@media (width < 560px) {
+  .industries-section .industries-block-one .inner-box::before {
+    display: none;
+  }
+}
+@media (width < 767px) {
+  .industries-section .industries-block-one .inner-box {
+    background-color: #00542b;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+  }
+}
+@media (width < 560px) {
+  .industries-section .industries-block-one .inner-box .icon-box {
+    margin-bottom: 15px;
+    height: 35px;
+  }
+  .industries-section .industries-block-one .inner-box .icon-box svg {
+    height: 35px;
+    fill: white;
+  }
+}
+@media (width < 560px) {
+  .industries-section .industries-block-one .inner-box h3 {
+    font-size: 20px;
+    color: white;
+  }
+}
+@media (width < 560px) {
+  .industries-section .industries-block-one .inner-box p {
+    font-size: 11px;
+    color: white;
+    opacity: 0.75;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
