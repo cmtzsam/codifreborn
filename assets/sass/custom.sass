@@ -1,64 +1,60 @@
-@import "./_fonts"
+@use "_fonts"
+@use "mystyle/_bootstrap-icons"
+// Old styles
+@use "oldcss/bootstrap"
+@use "oldcss/style"
+@use "oldcss/color"
+@use "oldcss/responsive"
+@use "oldcss/elpath"
+@use "oldcss/modulecss/about"
+@use "oldcss/modulecss/apps"
+@use "oldcss/modulecss/banner"
+@use "oldcss/modulecss/blog-details"
+@use "oldcss/modulecss/blog-sidebar"
+@use "oldcss/modulecss/category"
+@use "oldcss/modulecss/chooseus"
+@use "oldcss/modulecss/clients"
+@use "oldcss/modulecss/contact"
+@use "oldcss/modulecss/download"
+@use "oldcss/modulecss/error"
+@use "oldcss/modulecss/faq"
+@use "oldcss/modulecss/featured"
+@use "oldcss/modulecss/footer"
+@use "oldcss/modulecss/funfact"
+@use "oldcss/modulecss/header"
+@use "oldcss/modulecss/industries"
+@use "oldcss/modulecss/job-details"
+@use "oldcss/modulecss/job"
+@use "oldcss/modulecss/login"
+@use "oldcss/modulecss/news"
+@use "oldcss/modulecss/page-title"
+@use "oldcss/modulecss/portfolio"
+@use "oldcss/modulecss/pricing"
+@use "oldcss/modulecss/process"
+@use "oldcss/modulecss/profile"
+@use "oldcss/modulecss/service-details"
+@use "oldcss/modulecss/service"
+@use "oldcss/modulecss/subscribe"
+@use "oldcss/modulecss/team"
+@use "oldcss/modulecss/testimonial"
+@use "oldcss/modulecss/training"
+@use "oldcss/modulecss/video"
+@use "oldcss/modulecss/welcome"
 
-@import url("oldcss/bootstrap.css")
-@import url("oldcss/style.css")
-@import url("oldcss/color.css")
-@import url("oldcss/responsive.css")
-@import url("oldcss/elpath.css")
-@import url("oldcss/module-css/about.css ")
-@import url("oldcss/module-css/apps.css ")
-@import url("oldcss/module-css/banner.css ")
-@import url("oldcss/module-css/blog-details.css ")
-@import url("oldcss/module-css/blog-sidebar.css ")
-@import url("oldcss/module-css/category.css ")
-@import url("oldcss/module-css/chooseus.css ")
-@import url("oldcss/module-css/clients.css ")
-@import url("oldcss/module-css/contact.css ")
-@import url("oldcss/module-css/download.css ")
-@import url("oldcss/module-css/error.css ")
-@import url("oldcss/module-css/faq.css ")
-@import url("oldcss/module-css/featured.css ")
-@import url("oldcss/module-css/footer.css ")
-@import url("oldcss/module-css/funfact.css ")
-@import url("oldcss/module-css/header.css ")
-@import url("oldcss/module-css/industries.css ")
-@import url("oldcss/module-css/job-details.css ")
-@import url("oldcss/module-css/job.css ")
-@import url("oldcss/module-css/login.css ")
-@import url("oldcss/module-css/news.css ")
-@import url("oldcss/module-css/page-title.css ")
-@import url("oldcss/module-css/portfolio.css ")
-@import url("oldcss/module-css/pricing.css ")
-@import url("oldcss/module-css/process.css ")
-@import url("oldcss/module-css/profile.css ")
-@import url("oldcss/module-css/service-details.css ")
-@import url("oldcss/module-css/service.css ")
-@import url("oldcss/module-css/subscribe.css ")
-@import url("oldcss/module-css/team.css ")
-@import url("oldcss/module-css/testimonial.css ")
-@import url("oldcss/module-css/training.css ")
-@import url("oldcss/module-css/video.css ")
-@import url("oldcss/module-css/welcome.css")
+// My styles
+@use 'mystyle/_homebanner'
+@use 'components/_about-style-four'
 
-
-  
-.banner-section.bannercodif
-  .content-box
-    h1, h2
-      font-size: 60px
-      @media (width < 767px)
-        font-size: 40px
-  .pattern-layer
-    background-position: 100% 100%
-  .btn-one
-    background: var(--theme-color)!important
-    color: white!important
-    &:hover
-      color: white!important
+// Global changes
+.sec-title
+  .sub-title
+    // clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%)
     &::before,
     &::after
-      display: none
-      
+      border-radius: 5px
+      transform: skewX(-10deg)
+.theme-btn
+  border-radius: 5px     
 
 
 .industries-section 
@@ -95,3 +91,4 @@
           font-size: 11px
           color: white
           opacity: .75
+

@@ -1,0 +1,97 @@
+@use "variables" as *
+.banner-section
+  // banner homepage
+  &.bannercodif
+    padding: 40px 0
+    position: relative
+    overflow: hidden
+    @include phabletToTablet
+      padding: 25px 0
+    .content-column
+      position: relative
+      z-index: 1
+      @include minTabletPortraitTo990
+        position: absolute
+        bottom: 0
+        left: 0
+        height: 100%
+        display: flex
+        align-items: center
+    .content-box
+      @include phabletToTablet
+        width: 100%
+        max-width: 650px
+      h1, h2
+        font-size: 65px
+        font-weight: 600
+        margin-bottom: 0
+        @include tabletPortraitTo1280
+          font-size: 50px
+        @include phabletToTablet
+          font-size: 52px
+        @include maxPhablet
+          text-align: center
+        @include mobileToPhablet
+          font-size: 45px
+        @include maxMobile
+          font-size: 32px
+        @include mobileLandscapeToMobile
+          font-size: 38px
+      p
+        font-weight: 500
+        margin: 20px 0 40px
+        @include phabletToTablet
+          margin: 20px 0 20px
+        @include maxPhablet
+          text-align: center
+          line-height: 1.75
+          margin-bottom: 20px
+        @include maxMobilePortrait
+          font-size: 15px
+
+    .pattern-layer
+      background-position: 100% 100%
+    .btn-box
+      @include maxPhablet
+        justify-content: center
+      @include maxPhablet
+        text-align: center
+      .btn-one
+        background: var(--theme-color)!important
+        color: white!important
+        font-weight: 600
+        margin: 0
+        @include maxPhablet
+          font-size: 15px
+          margin-bottom: 0
+        &:hover
+          color: white!important
+        &::before,
+        &::after
+          display: none
+    .image-column
+      height: 450px
+      display: flex
+      @include phabletToTablet
+        position: absolute
+        top: 0
+        right: 0
+        width: 50%        
+        height: 450px
+      @include minTabletPortraitTo990
+        position: relative
+      @include maxPhablet
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%          
+        height: 350px
+      @include maxMobile         
+        // top: 25%
+        height: 75%
+        
+      .image-inner
+        width: 100%
+        height: 100%
+        justify-content: center
+        margin: 0 auto
