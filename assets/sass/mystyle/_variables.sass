@@ -17,8 +17,8 @@ $desktop-1280: 1280px
 $desktop-small: 1140px
 $tablet-landscape: 1024px
 $tablet-portrait: 991px
-$tablet: 768px
-$phablet: 740px
+// $tablet: 768px
+$phablet: 766px
 $mobile: 568px
 $mobile-landscape: 480px
 $mobile-portrait: 420px
@@ -95,15 +95,15 @@ $mobile-portrait: 420px
 @mixin minTabletPortraitTo990
 	@media ( min-width: $tablet-portrait ) and ( max-width: 990px )
 		@content
-// min 740 - desktop
+// min 766 - desktop
 @mixin phabletToDesktop
 	@media ( min-width: $phablet ) and ( max-width: $desktop )
 		@content
-// min 740 - 1140
+// min 766 - 1140
 @mixin phabletToDesktopSmall
 	@media ( min-width: $phablet ) and ( max-width: $desktop-small )
 		@content
-// min 740 - 991
+// min 766 - 991
 @mixin phabletToTablet
 	@media ( min-width: $phablet ) and ( max-width: $tablet-portrait )
 		@content
@@ -111,15 +111,15 @@ $mobile-portrait: 420px
 @mixin mobileToPortrait
 	@media ( min-width: $mobile ) and ( max-width: $tablet-portrait )
 		@content
-// 568 - 740
+// 568 - 766
 @mixin mobileToPhablet
 	@media ( min-width: $mobile ) and ( max-width: $phablet )
 		@content
-// min 740
+// min 766
 @mixin minPhablet
 	@media ( min-width: $phablet )
 		@content
-// max 740
+// max 766
 @mixin maxPhablet
 	@media ( max-width: $phablet )
 		@content
@@ -215,15 +215,23 @@ $mobile-portrait: 420px
 
 
 :root
-	--theme-color-2: #{$verde}  
+	--theme-color-2: #{$verde}
+	--secondary-color: #{$verde}
 
 body
 	font-size: $font-size-body
+	overflow-x: hidden
 	p
 		font-size: 1rem
-		line-height: 2
+		line-height: 1.75
 		@include maxMobile
 			font-size: .95rem
 
 .sec-title
 	line-height: 1.25
+	&::before,
+	&::after
+		border-radius: 5px
+		transform: skewX(-10deg)
+.theme-btn
+	border-radius: 5px

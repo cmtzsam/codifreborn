@@ -1,0 +1,59 @@
+@use "../mystyle/_variables" as *
+  
+.industries-section 
+  .inner-container
+    display: flex
+    border-bottom: 0
+    border-radius: 5px
+    overflow: hidden
+    @media (width < 767px)
+      display: flex
+      flex-wrap: wrap
+  .industries-block-one
+    display: flex
+    @media (width < 767px)
+      width: 50%
+      display: flex
+      border-bottom: 0!important
+    .inner-box
+      width: 100%
+      &::before
+        @include maxPhablet
+          display: none
+      @media (width < 767px)
+        background-color: #00542b
+        padding: 10px
+        border: 1px solid rgba(255,255,255,.22)
+      .icon-box
+        @include maxPhablet
+          margin-bottom: 0
+          height: 60px
+        @include maxMobile
+          height: 50px
+        i
+          @include maxPhablet
+            font-size: 50px
+            color: white
+          @include maxMobile
+            font-size: 35px
+      h3
+        @include maxPhablet
+          font-size: 20px
+          color: white
+      p
+        @include maxPhablet
+          font-size: 11px
+          color: white
+          opacity: .75  
+
+
+
+.chooseus-block-one 
+  .inner-box
+    box-shadow: 0px 10px 70px 0px rgba(0, 0, 0, 0.2)
+    .icon-box
+      i
+        color: white
+    h3
+      a
+        color: #{$verde}          
