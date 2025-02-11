@@ -16,7 +16,7 @@ $desktop: $container-width
 $desktop-1280: 1280px
 $desktop-small: 1140px
 $tablet-landscape: 1024px
-$tablet-portrait: 960px
+$tablet-portrait: 991px
 $tablet: 768px
 $phablet: 740px
 $mobile: 568px
@@ -71,27 +71,27 @@ $mobile-portrait: 420px
 @mixin minTabletLandscape
 	@media (min-width: $tablet-landscape )
 		@content
-// 960 - 1280
+// 991 - 1280
 @mixin tabletPortraitTo1280
 	@media ( min-width: $tablet-portrait ) and ( max-width: $desktop-1280 )
 		@content
-// 960 - 1024
+// 991 - 1024
 @mixin tabletPortraitToTabletLandscape
 	@media ( min-width: $tablet-portrait ) and ( max-width: $tablet-landscape )
 		@content
-// 960 - 1140
+// 991 - 1140
 @mixin tabletPortraitToDesktopSmall
 	@media ( min-width: $tablet-portrait ) and ( max-width: $desktop-small )
 		@content
-// min 960
+// min 991
 @mixin minTabletPortrait
 	@media ( min-width: $tablet-portrait )
 		@content
-// max 960
+// max 991
 @mixin maxTabletPortrait
 	@media ( max-width: $tablet-portrait )
 		@content
-// min 960 to max 990
+// min 991 to max 990
 @mixin minTabletPortraitTo990
 	@media ( min-width: $tablet-portrait ) and ( max-width: 990px )
 		@content
@@ -103,11 +103,11 @@ $mobile-portrait: 420px
 @mixin phabletToDesktopSmall
 	@media ( min-width: $phablet ) and ( max-width: $desktop-small )
 		@content
-// min 740 - 960
+// min 740 - 991
 @mixin phabletToTablet
 	@media ( min-width: $phablet ) and ( max-width: $tablet-portrait )
 		@content
-// 568 - 960
+// 568 - 991
 @mixin mobileToPortrait
 	@media ( min-width: $mobile ) and ( max-width: $tablet-portrait )
 		@content
@@ -212,3 +212,18 @@ $mobile-portrait: 420px
 @mixin flexRowReverse
 	display: flex
 	flex-flow: row-reverse
+
+
+:root
+	--theme-color-2: #{$verde}  
+
+body
+	font-size: $font-size-body
+	p
+		font-size: 1rem
+		line-height: 2
+		@include maxMobile
+			font-size: .95rem
+
+.sec-title
+	line-height: 1.25

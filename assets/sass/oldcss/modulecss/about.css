@@ -325,11 +325,11 @@
   display: block;
 }
 
-.content_block_five .content-box .sec-title p{
+/* .content_block_five .content-box .sec-title p{
   font-size: 18px;
   line-height: 30px;
   margin-top: 20px;
-}
+} */
 
 .content_block_five .content-box .inner-box .single-item{
   position: relative;
