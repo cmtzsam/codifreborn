@@ -46,61 +46,8 @@
 @use 'mystyle/_funfactsection'
 @use 'mystyle/_about-style-four'
 @use 'mystyle/_industriesblock'
+@use 'mystyle/_ribbonmessage'
 
 body
   width: 100%
   overflow-x: hidden
-
-.ribbonMessage
-  overflow: hidden
-  transform: rotate(-5deg)
-  position: relative
-  white-space: nowrap
-  background: var(--theme-color)
-  padding: 12px 0
-  width: 120%
-  left: -10%
-  &--texts
-    display: inline-flex
-    transform: transform 0.2s linear
-    padding: 0 0 5px
-    position: relative
-    z-index: 1
-    p
-      white-space: nowrap
-      position: relative
-      display: inline-block
-      font-size: 32px
-      line-height: 40px
-      font-family: var(--title-font)
-      color: white
-      margin-right: 280px
-      @media (width < 560px)
-        font-size: 20px
-        margin-right: 70px
-      &::before
-        position: absolute
-        content: ''
-        background-image: url(../images/icons/icon-1-white.png)
-        width: 37px
-        height: 37px
-        top: 2px
-        right: -70px
-        background-repeat: no-repeat        
-        @media (width < 560px)
-          right: -50px
-          width: 25px
-          height: 25px
-          background-size: 100%
-          background-position: center center
-          background-repeat: no-repeat
-          top: 6.75px
-      // @include maxPhablet
-      //   margin-right: 30px
-      //   letter-spacing: 0
-      //   font-size: 2.5rem
-      //   padding: 15px 0
-      // @include maxMobile
-      //   margin-right: 30px
-      //   letter-spacing: 0
-      //   font-size: 1.75rem  

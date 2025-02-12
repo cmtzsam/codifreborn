@@ -36218,11 +36218,6 @@ body p {
   color: #2f9b66;
 }
 
-body {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 .ribbonMessage {
   overflow: hidden;
   transform: rotate(-5deg);
@@ -36276,6 +36271,11 @@ body {
     background-repeat: no-repeat;
     top: 6.75px;
   }
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=custom.css.map */
