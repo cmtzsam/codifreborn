@@ -1,13 +1,14 @@
 
 .ribbonMessage
-  overflow: hidden
-  transform: rotate(-5deg)
-  position: relative
-  white-space: nowrap
-  background: var(--theme-color)
-  padding: 12px 0
-  width: 120%
-  left: -10%
+  width: 100%
+  &--abc
+    transform: rotate(-5deg)
+    position: relative
+    white-space: nowrap
+    background: var(--theme-color)
+    padding: 12px 0
+    width: 120%
+    left: -10%
   &--texts
     display: inline-flex
     transform: transform 0.2s linear
@@ -33,7 +34,7 @@
         width: 37px
         height: 37px
         top: 2px
-        right: -70px
+        left: calc(100% + 130px)
         background-repeat: no-repeat        
         @media (width < 560px)
           right: -50px

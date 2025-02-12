@@ -36219,7 +36219,9 @@ body p {
 }
 
 .ribbonMessage {
-  overflow: hidden;
+  width: 100%;
+}
+.ribbonMessage--abc {
   transform: rotate(-5deg);
   position: relative;
   white-space: nowrap;
@@ -36258,7 +36260,7 @@ body p {
   width: 37px;
   height: 37px;
   top: 2px;
-  right: -70px;
+  left: calc(100% + 130px);
   background-repeat: no-repeat;
 }
 @media (width < 560px) {
@@ -36275,6 +36277,11 @@ body p {
 
 body {
   width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
   overflow-x: hidden;
 }
 
