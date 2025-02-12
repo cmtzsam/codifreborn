@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +32,7 @@
                                 garantizando calidad técnica y adaptabilidad para cualquier tipo de proyecto.</p>
                             <div class="btn-box">
                                 <a href="#!" class="theme-btn btn-one mr_20">Descubre más</a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -71,12 +72,13 @@
                                     </div>
                                 </div>
                                 <div class="support-box">
-                                    <a href="mailto:contacto@codificarlos.com" class="icon-box" title="contacto@codificarlos.com">
-                                        <i class="bi bi-envelope-at" ></i>
+                                    <a href="mailto:contacto@codificarlos.com" class="icon-box"
+                                        title="contacto@codificarlos.com">
+                                        <i class="bi bi-envelope-at"></i>
                                     </a>
                                     <div class="support-box-txt">
                                         <span>¿Tienes dudas?</span>
-                                        <h4><a href="mailto:contacto@codificarlos.com">¡Escribenos!</a></h4>                                        
+                                        <h4><a href="mailto:contacto@codificarlos.com">¡Escribenos!</a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -87,9 +89,12 @@
                             <div class="content-box">
                                 <div class="sec-title pb_40 sec-title-animation animation-style2">
                                     <span class="sub-title mb_10 title-animation">Acerca de</span>
-                                    <h2 class="title-animation mb_20 mt_10"><span>Codificarlos</span>, soluciones digitales.</h2>
+                                    <h2 class="title-animation mb_20 mt_10"><span>Codificarlos</span>, soluciones
+                                        digitales.</h2>
                                     <p class="title-animation">Nuestro enfoque combina innovación, eficiencia y un
-                                        acompañamiento excepcional para ayudarte a destacar en la web. Nuestro enfoque combina innovación, eficiencia y un acompañamiento excepcional para ayudarte a destacar en la web.</p> 
+                                        acompañamiento excepcional para ayudarte a destacar en la web. Nuestro enfoque
+                                        combina innovación, eficiencia y un acompañamiento excepcional para ayudarte a
+                                        destacar en la web.</p>
                                 </div>
                                 <div class="inner-box clearfix">
                                     <div class="single-item px-3 py-3 d-flex align-items-center">
@@ -123,8 +128,8 @@
                 </div>
             </div>
         </section>
-        <!-- about-style-four end -->   
-         
+        <!-- about-style-four end -->
+
         <!-- funfact-section -->
         <section class=" funfact-section centred pt_30 pb_20">
             <div class="auto-container">
@@ -172,60 +177,35 @@
                 </div>
             </div>
         </section>
-        <!-- funfact-section end -->        
+        <!-- funfact-section end -->
 
         <!-- cintilla -->
-        <section class=" pt_40 pb_60 slide-text">
-            <div class="text-inner">
-                <ul class="text-list">
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-                    <li>Somos expertos</li>
-                    <li>Somos excelentes</li>
-                    <li>Somos extraordinarios</li>
-                    <li>Somos Codificarlos</li>
-
-                </ul>
+        <div class="ribbonMessage slide-text mt_40 mb_70">
+            <div class="ribbonMessage--texts">
+                <p>Somos expertos</p>
+                <p>Somos excelentes</p>
+                <p>Somos extraordinarios</p>
+                <p>Somos Codificarlos</p>
+                <p>Desarrollo web personalizado</p>
+                <p>Tiendas en línea para empresas</p>
+                <p>E-commerce para empresas</p>
             </div>
-        </section>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const animado = document.querySelector('.ribbonMessage--texts');
+                let maxScroll = 0; // Ajusta la cantidad de desplazamiento
+
+                function handleScroll() {
+                    let scrollY = window.scrollY || window.pageYOffset;
+                    maxScroll = scrollY * 2;
+                    let moveX = Math.min(scrollY / 2, maxScroll); // Controla el límite del movimiento
+                    animado.style.transform = `translateX(-${moveX}px)`;
+                }
+
+                window.addEventListener('scroll', handleScroll);
+            });
+        </script>
         <!-- cintilla -->
 
         <!-- chooseus-style-two -->
@@ -273,7 +253,7 @@
                 </div>
             </div>
         </section>
-        <!-- chooseus-style-two end -->   
+        <!-- chooseus-style-two end -->
 
         <!-- industries-section -->
         <section class="industries-section pt_30 pb_30">
@@ -396,7 +376,7 @@
                 </div>
             </div>
         </section>
-        <!-- recent-projects end -->        
+        <!-- recent-projects end -->
 
 
         <!-- news-section -->
@@ -453,8 +433,8 @@
             </div>
         </section>
         <!-- news-section end -->
-         
-        
+
+
         <!-- testimonial-style-two -->
         <section class=" testimonial-style-two pt_30 pb_120" style="z-index: 1;">
             <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-17.png);"></div>
@@ -529,7 +509,7 @@
 
 
     <!-- main-footer -->
-    <footer class=" main-footer light-footer d-none">
+    <footer class=" main-footer light-footer ">
         <div class="widget-section p_relative pt_80 pb_100">
             <div class="auto-container">
                 <div class="row clearfix">
@@ -627,7 +607,7 @@
         <svg class="scroll-top-inner" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
         </svg>
-    </div>    
+    </div>
 
     <script src="assets/js/three.js"></script>
     <script type="module" src="assets/js/three.module.js"></script>
@@ -638,7 +618,7 @@
         // Función para obtener el FOV dinámico
         function getDynamicFOV() {
             return width < 580 ? 28 : 22;
-        }        
+        }
         let width = document.querySelector('.image-inner').clientWidth;
         let height = document.querySelector('.image-inner').clientHeight;
         const scene = new THREE.Scene();
@@ -709,4 +689,5 @@
     </script>
 
 </body><!-- End of .page_wrapper -->
+
 </html>
