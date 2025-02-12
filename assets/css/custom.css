@@ -36218,4 +36218,9 @@ body p {
   color: #2f9b66;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /*# sourceMappingURL=custom.css.map */
