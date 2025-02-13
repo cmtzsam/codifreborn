@@ -50,6 +50,7 @@
 @use 'mystyle/_recentprojects'
 @use 'mystyle/_ctacontact'
 @use 'mystyle/_testimonials'
+@use 'mystyle/_headercustom'
 
 body
   width: 100%
@@ -58,3 +59,21 @@ body
 main
   position: relative
   overflow-x: hidden
+
+// 
+.main-menu 
+  .navigation 
+    & > 
+      li.dropdown 
+        & >
+          a:before
+            content: "\F282"
+            font-family: "bootstrap-icons" !important
+            font-size: 14px
+            right: -3px
+
+.main-menu .navigation > li > ul > li > a:hover, .main-menu .navigation > li > .megamenu li > a:hover
+  letter-spacing: normal
+
+.main-menu .navigation > li > ul > li > a, .main-menu .navigation > li > .megamenu li > a
+  text-transform: none          

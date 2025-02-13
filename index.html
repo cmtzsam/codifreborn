@@ -10,16 +10,134 @@
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="assets/css/custom.css" rel="stylesheet">
     <!-- swiper -->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 
 <!-- page wrapper -->
 
 <body>
+
+
+    <!-- main header -->
+    <header class="main-header header-style-five">
+
+        <!-- header-lower -->
+        <div class="header-lower">
+            <div class="auto-container">
+                <div class="outer-box">
+                    <figure class="logo-box"><a href="codificarlos.html"><img src="assets/images/newlogo.png"
+                                alt="Codificarlos" width="220"></a></figure>
+                    <div class="menu-area">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <i class="bi bi-list"></i>
+                        </div>
+                        <nav class="main-menu navbar-expand-md navbar-light clearfix">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="current"><a href="codificarlos.html">Inicio</a></li>
+                                    <li><a href="codificarlos-acercade.html">Acerca de</a></li>
+                                    <li><a href="codificarlos-portfolio.html">Proyectos</a></li>
+                                    <li class="dropdown">
+                                        <a href="#!">Planes y precios</a>
+                                        <ul>
+                                            <li><a href="codificarlos-planes-1.html">Sitios informativos</a></li>
+                                            <li><a href="codificarlos-planes-2.html">Tiendas en línea</a></li>
+                                            <li><a href="codificarlos-planes-3.html">Mantenimiento y soporte</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="codificarlos-blog-list.html">Blog</a>
+                                        <ul>
+                                            <li><a href="codificarlos-blog-categoria.html">Cate.1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="menu-right-content">
+                        <div class="search-btn mr_20"><button class="search-toggler"><i class="icon-1"></i></button>
+                        </div>
+                        <div class="btn-box"><a href="codificarlos-contacto.html" class="theme-btn btn-one"><b
+                                    class="fw-normal text-light">Contactanos</b></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Menú móvil -->
+        <div class="mobile-menu">
+            <span class="close-btn">&times;</span>
+            <ul class="navigation">
+                <li><a href="codificarlos.html">Inicio</a></li>
+                <li><a href="codificarlos-acercade.html">Acerca de</a></li>
+                <li><a href="codificarlos-portfolio.html">Proyectos</a></li>
+                <li class="dropdown">
+                    <a href="#">Planes y precios <span class="dropdown-toggle">+</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="codificarlos-planes-1.html">Sitios informativos</a></li>
+                        <li><a href="codificarlos-planes-2.html">Tiendas en línea</a></li>
+                        <li><a href="codificarlos-planes-3.html">Mantenimiento y soporte</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Blog <span class="dropdown-toggle">+</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="codificarlos-blog-categoria.html">Cate.1</a></li>
+                    </ul>
+                </li>
+                <li><a href="codificarlos-contacto.html" class="theme-btn btn-one">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <!-- Fondo oscuro cuando el menú está activo -->
+        <div class="mobile-menu-overlay"></div>
+
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileNavToggler = document.querySelector(".mobile-nav-toggler");
+            const mobileMenu = document.querySelector(".mobile-menu");
+            const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
+            const closeBtn = document.querySelector(".mobile-menu .close-btn");
+            const dropdownToggles = document.querySelectorAll(".mobile-menu .dropdown-toggle");
+
+            // Abrir menú móvil
+            mobileNavToggler.addEventListener("click", function () {
+                console.log('s')
+                mobileMenu.classList.add("active");
+                mobileMenuOverlay.classList.add("active");
+            });
+
+            // Cerrar menú móvil
+            closeBtn.addEventListener("click", function () {
+                mobileMenu.classList.remove("active");
+                mobileMenuOverlay.classList.remove("active");
+            });
+
+            // Cerrar al hacer clic fuera del menú
+            mobileMenuOverlay.addEventListener("click", function () {
+                mobileMenu.classList.remove("active");
+                mobileMenuOverlay.classList.remove("active");
+            });
+
+            // Manejo de dropdowns en el menú móvil
+            dropdownToggles.forEach(function (toggle) {
+                toggle.addEventListener("click", function () {
+                    const dropdownMenu = this.parentElement.nextElementSibling;
+                    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+                    this.textContent = dropdownMenu.style.display === "block" ? "-" : "+";
+                });
+            });
+        });
+
+    </script>
+    <!-- main-header end -->
+
 
     <main>
 
@@ -36,7 +154,8 @@
                             <p>Somos especialistas en programación web, desarrollamos plataformas a la medida,
                                 garantizando calidad técnica y adaptabilidad para cualquier tipo de proyecto.</p>
                             <div class="btn-box">
-                                <a href="#!" class="theme-btn btn-one mr_20">Descubre más <i class="bi bi-arrow-down-right"></i> </a>
+                                <a href="#!" class="theme-btn btn-one mr_20">Descubre más <i
+                                        class="bi bi-arrow-down-right"></i> </a>
 
                             </div>
                         </div>
@@ -94,8 +213,12 @@
                             <div class="content-box">
                                 <div class="sec-title pb_40 sec-title-animation animation-style2">
                                     <span class="sub-title mb_10 title-animation">Acerca de</span>
-                                    <h2 class="title-animation mb_20 mt_10"><span>Codificarlos</span>, soluciones digitales a medida.</h2>
-                                    <p class="title-animation">En Codificarlos combinamos innovación, eficiencia y acompañamiento estratégico para hacer crecer tu negocio en el mundo digital. Nos especializamos en Shopify, WordPress y HubSpot, creando experiencias digitales que generan impacto.</p>
+                                    <h2 class="title-animation mb_20 mt_10"><span>Codificarlos</span>, soluciones
+                                        digitales a medida.</h2>
+                                    <p class="title-animation">En Codificarlos combinamos innovación, eficiencia y
+                                        acompañamiento estratégico para hacer crecer tu negocio en el mundo digital. Nos
+                                        especializamos en Shopify, WordPress y HubSpot, creando experiencias digitales
+                                        que generan impacto.</p>
                                 </div>
                                 <div class="inner-box clearfix">
                                     <div class="single-item px-3 py-3 d-flex align-items-center">
@@ -119,9 +242,6 @@
                                     <div class="single-item px-3 py-3 d-flex align-items-center">
                                         <h4>Estrategia digital</h4>
                                     </div>
-                                    <!-- <div class="single-item px-3 py-3 d-flex align-items-center">
-                                        <h4>Optimización SEO</h4>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -139,9 +259,9 @@
                         <div class="funfact-block-one">
                             <div class="inner-box">
                                 <div class="count-outer">
-                                    + <span class="odometer" data-count="11">9</span><span class="symble"></span>
+                                    + <span class="odometer" data-count="11">2</span><span class="symble"></span>
                                 </div>
-                                <p>Años de <br> experiencia</p>
+                                <p>Años en el<br> mercado</p>
                             </div>
                         </div>
                     </div>
@@ -159,7 +279,7 @@
                         <div class="funfact-block-one">
                             <div class="inner-box">
                                 <div class="count-outer">
-                                    + <span class="odometer" data-count="5">15</span><span class="symble"></span>
+                                    + <span class="odometer" data-count="5">12</span><span class="symble"></span>
                                 </div>
                                 <p>Clientes <br> satisfechos</p>
                             </div>
@@ -169,7 +289,7 @@
                         <div class="funfact-block-one">
                             <div class="inner-box">
                                 <div class="count-outer">
-                                    + <span class="odometer" data-count="5">50</span><span class="symble"></span>
+                                    + <span class="odometer" data-count="5">20</span><span class="symble"></span>
                                 </div>
                                 <p>Sitios web <br> programados</p>
                             </div>
@@ -191,7 +311,7 @@
                     <p>Programación a la medida para empresas</p>
                     <p>Soluciones digitales a la medida</p>
                     <p>Programación web sobre HubSpot</p>
-                </div>                
+                </div>
             </div>
         </div>
         <script>
@@ -258,7 +378,7 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>
 
         <!-- chooseus-style-two end -->
 
@@ -321,7 +441,7 @@
             <div class="auto-container">
                 <div class="sec-title centred pb_50 sec-title-animation animation-style2">
                     <span class="sub-title mb_10 title-animation">Proyectos</span>
-                    <h2 class="title-animation">Soluciones implementadas</h2>
+                    <h2 class="title-animation">Últimas soluciones implementadas</h2>
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-6 col-md-6 col-sm-12 category-block">
@@ -332,7 +452,8 @@
                                 </h3>
                                 <p>Tienda en línea especializada en productos para bebés y niños. </p>
                                 <img src="assets/images/proy1.jpg" alt="Kidsheroes">
-                                <a href="job-details.html" class="theme-btn btn-one">Ver más <i class="bi bi-arrow-right-short"></i></a>
+                                <a href="job-details.html" class="theme-btn btn-one">Ver más <i
+                                        class="bi bi-arrow-right-short"></i></a>
                             </div>
                         </div>
                     </div>
@@ -344,7 +465,8 @@
                                 </h3>
                                 <p>Tienda en línea especializada en productos para bebés y niños. </p>
                                 <img src="assets/images/proy2.jpg" alt="Kidsheroes">
-                                <a href="job-details.html" class="theme-btn btn-one">Ver más <i class="bi bi-arrow-right-short"></i></a>
+                                <a href="job-details.html" class="theme-btn btn-one">Ver más <i
+                                        class="bi bi-arrow-right-short"></i></a>
                             </div>
                         </div>
                     </div>
@@ -356,7 +478,8 @@
                                 </h3>
                                 <p>Tienda en línea especializada en productos para bebés y niños. </p>
                                 <img src="assets/images/proy3.jpg" alt="Kidsheroes">
-                                <a href="job-details.html" class="theme-btn btn-one">Ver más <i class="bi bi-arrow-right-short"></i></a>
+                                <a href="job-details.html" class="theme-btn btn-one">Ver más <i
+                                        class="bi bi-arrow-right-short"></i></a>
                             </div>
                         </div>
                     </div>
@@ -368,7 +491,8 @@
                                 </h3>
                                 <p>Tienda en línea especializada en productos para bebés y niños. </p>
                                 <img src="assets/images/proy4.jpg" alt="Kidsheroes">
-                                <a href="job-details.html" class="theme-btn btn-one">Ver más <i class="bi bi-arrow-right-short"></i></a>
+                                <a href="job-details.html" class="theme-btn btn-one">Ver más <i
+                                        class="bi bi-arrow-right-short"></i></a>
                             </div>
                         </div>
                     </div>
@@ -450,7 +574,7 @@
 
 
         <!-- download-section -->
-        <section class="download-section ctaContact" >
+        <section class="download-section ctaContact">
             <div class="auto-container">
                 <div class="inner-container">
                     <div class="row align-items-center">
@@ -462,13 +586,15 @@
                         <div class="col-lg-8 col-md-12 col-sm-12 content-column">
                             <div class="content-box">
                                 <h2> <small>¿Aún tienes preguntas? </small> <br>
-                                    <span>¡Contáctanos y te ayudamos!</span>                                    </h2>
+                                    <span>¡Contáctanos y te ayudamos!</span>
+                                </h2>
                                 <ul class="list-item mb_30">
                                     <li>Resolvemos todas tus dudas sobre desarrollo web y estrategias digitales.</li>
                                     <li>Te asesoramos en la mejor solución para tu negocio.</li>
                                     <li>Obtén una consulta personalizada con nuestro equipo experto.</li>
                                 </ul>
-                                <button type="button" class="theme-btn btn-one">¡Conversemos! &nbsp; <i class="bi bi-arrow-right-short"></i></button>
+                                <button type="button" class="theme-btn btn-one">¡Conversemos! &nbsp; <i
+                                        class="bi bi-arrow-right-short"></i></button>
                             </div>
                         </div>
                     </div>
@@ -499,7 +625,8 @@
                                         <span class="designation">CEO - Center web</span>
                                     </div>
                                     <p>Recomiendo a Carlos Alberto como desarrollador web. Domina varios lenguajes de
-                                        programación, garantiza tiempos de entrega y ofrece excelente relación costo-beneficio.
+                                        programación, garantiza tiempos de entrega y ofrece excelente relación
+                                        costo-beneficio.
                                         Es la elección perfecta para proyectos web eficientes y efectivos."</p>
                                 </div>
                             </div>
@@ -514,9 +641,12 @@
                                         <h4>Omar Rincón</h4>
                                         <span class="designation">Inbound Marketing Specialist</span>
                                     </div>
-                                    <p>Carlos es un constructor web excepcional con un conocimiento profundo en su campo. Su
-                                        diligencia y rapidez fueron clave para que mi sitio web estuviera listo en un tiempo
-                                        récord. Estoy encantado con el resultado final y agradezco su valiosa contribución a mi
+                                    <p>Carlos es un constructor web excepcional con un conocimiento profundo en su
+                                        campo. Su
+                                        diligencia y rapidez fueron clave para que mi sitio web estuviera listo en un
+                                        tiempo
+                                        récord. Estoy encantado con el resultado final y agradezco su valiosa
+                                        contribución a mi
                                         negocio. Recomiendo sinceramente su talento y profesionalismo."</p>
                                 </div>
                             </div>
@@ -531,7 +661,8 @@
                                         <h4>Javier Garza</h4>
                                         <span class="designation">CEO - Kidsheroes</span>
                                     </div>
-                                    <p>Increíble calidad y servicio, Te orienta e investiga para obtener la mejor solución a las
+                                    <p>Increíble calidad y servicio, Te orienta e investiga para obtener la mejor
+                                        solución a las
                                         propuestas que plantees."</p>
                                 </div>
                             </div>
@@ -546,8 +677,10 @@
                                         <h4>Laura Andrea</h4>
                                         <span class="designation">Clixmedia</span>
                                     </div>
-                                    <p>Excelente servicio, te guía en cada paso para que tomes las mejores decisiones para tu
-                                        proyecto web, siempre buscando cumplir con tus objetivos de negocio y brindándote
+                                    <p>Excelente servicio, te guía en cada paso para que tomes las mejores decisiones
+                                        para tu
+                                        proyecto web, siempre buscando cumplir con tus objetivos de negocio y
+                                        brindándote
                                         herramientas efectivas para su correcta función."</p>
                                 </div>
                             </div>
@@ -562,7 +695,7 @@
 
 
         <!-- news-section -->
-        <section class="d-none news-section pt_0 pb_50" style="z-index: 3;">
+        <section class="news-section pt_0 pb_50" style="z-index: 3;">
             <div class="auto-container">
                 <div class="sec-title centred pb_30 sec-title-animation animation-style2">
                     <span class="sub-title mb_10 title-animation">Blog</span>
@@ -624,14 +757,14 @@
 
     <!-- main-footer -->
     <footer class=" main-footer light-footer ">
-        <div class="widget-section p_relative pt_80 pb_100">
+        <div class="widget-section p_relative pt_40 pb_40">
             <div class="auto-container">
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                         <div class="footer-widget logo-widget mr_30">
                             <p class="footer-logo mb_20 text-start">
-                                <a href="index.html" ><img src="assets/images/newlogo-bn.png"
-                                    alt="Codificarlos" width="280" ></a>                                
+                                <a href="index.html"><img src="assets/images/newlogo-bn.png" alt="Codificarlos"
+                                        width="280"></a>
                             </p>
                             <p>Nos esforzamos por brindarte confianza, tarifas accesibles y, sobre todo, garantizar tu
                                 seguridad y comodidad en cada paso del proceso.</p>
@@ -699,7 +832,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="auto-container">
+            <div class="auto-container py_20">
                 <div class="bottom-inner">
                     <div class="copyright">
                         <p>Codificarlos &copy; 2025 </p>
@@ -747,7 +880,7 @@
             }
         });
 
-        
+
         // Configuración básica de la escena
         // Función para obtener el FOV dinámico
         function getDynamicFOV() {
