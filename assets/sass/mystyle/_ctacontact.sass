@@ -2,15 +2,26 @@
 .ctaContact
   position: relative
   z-index: 4
+  padding: 0 0 50px
+  @include maxPhablet
+    padding: 0 0 20px
   .inner-container
     background-color: #{$verde}
     border-radius: #{$radiusborder}
     padding: 45px 15px
+    @include maxPhablet
+      padding: 20px
+    @include maxMobile
+      padding: 15px
   .image-box
     text-align: center
     .image
       border-radius: #{$radiusborder}
       overflow: hidden
+      @include maxPhablet
+        height: 120px
+        width: 100%
+        border-radius: 2px
       img
         border-radius: 0
   .content-box
