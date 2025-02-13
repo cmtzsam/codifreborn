@@ -29928,7 +29928,7 @@ Image Hover
 .download-section .content-box .list-item li:before {
   position: absolute;
   content: "";
-  background-image: url(../../images/icons/icon-9.png);
+  background-image: url(../images/icons/icon-9.png);
   left: 0px;
   top: 1px;
   width: 24px;
@@ -36367,6 +36367,93 @@ body p {
   margin-top: -30px;
   color: white;
   font-weight: 600;
+}
+
+.ctaContact {
+  position: relative;
+  z-index: 4;
+}
+.ctaContact .inner-container {
+  background-color: #2f9b66;
+  border-radius: 5px;
+  padding: 45px 15px;
+}
+.ctaContact .image-box {
+  text-align: center;
+}
+.ctaContact .image-box .image {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.ctaContact .image-box .image img {
+  border-radius: 0;
+}
+.ctaContact .content-box {
+  width: 90%;
+}
+@media (max-width: 568px) {
+  .ctaContact .content-box {
+    width: 100%;
+  }
+}
+.ctaContact .content-box h2 {
+  line-height: 1.1;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+.ctaContact .content-box h2 small {
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.4);
+}
+.ctaContact .content-box h2 span {
+  color: white;
+}
+.ctaContact .content-box .list-item li {
+  color: white;
+}
+.ctaContact .content-box .list-item li::before {
+  background-image: url(../images/icon-sparkle-darkgreen.png);
+}
+.ctaContact .content-box .theme-btn {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+.ctaContact .content-box .theme-btn::before, .ctaContact .content-box .theme-btn::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.testimonialsBlock .testimonial-block-two {
+  min-height: 300px;
+  display: flex;
+}
+.testimonialsBlock .testimonial-block-two .inner-box {
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.testimonialsBlock .testimonial-block-two .inner-box h4 {
+  font-weight: 600;
+}
+.testimonialsBlock .testimonial-block-two .inner-box .designation {
+  color: #2f9b66;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  top: 0;
+  left: 0;
+  padding: 40px 0 0;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #2f9b66;
 }
 
 body {

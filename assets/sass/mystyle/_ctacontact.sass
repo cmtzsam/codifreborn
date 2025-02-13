@@ -1,0 +1,42 @@
+@use "../mystyle/_variables" as *
+.ctaContact
+  position: relative
+  z-index: 4
+  .inner-container
+    background-color: #{$verde}
+    border-radius: #{$radiusborder}
+    padding: 45px 15px
+  .image-box
+    text-align: center
+    .image
+      border-radius: #{$radiusborder}
+      overflow: hidden
+      img
+        border-radius: 0
+  .content-box
+    width: 90%
+    @include maxMobile
+      width: 100%
+    h2
+      line-height: 1.1
+      color: rgba(0,0,0,0.4)
+      margin-bottom: 30px
+      small
+        font-size: .7em
+        color: rgba(0,0,0,0.4)
+      span
+        color: white
+        // border-bottom: 3px solid rgba( 255, 255, 255, 0.5)
+    .list-item 
+      li
+        color: white
+        &::before
+          background-image: url(../images/icon-sparkle-darkgreen.png)
+    .theme-btn
+      background-color: rgba(0, 0, 0, 0.2)
+      color: white
+      border: 2px solid rgba(255, 255, 255, 0.3)
+      border-radius: 5px
+      &::before,
+      &::after
+        background-color: rgba(0, 0, 0, 0.3)

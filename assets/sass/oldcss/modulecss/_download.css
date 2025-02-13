@@ -75,7 +75,7 @@
 .download-section .content-box .list-item li:before{
   position: absolute;
   content: '';
-  background-image: url(../../images/icons/icon-9.png);
+  background-image: url(../images/icons/icon-9.png);
   left: 0px;
   top: 1px;
   width: 24px;
