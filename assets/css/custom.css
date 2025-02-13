@@ -36315,6 +36315,8 @@ body p {
     background-position: center center;
     background-repeat: no-repeat;
     top: 6.75px;
+    right: 0;
+    left: -45px;
   }
 }
 
