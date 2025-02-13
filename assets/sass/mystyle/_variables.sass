@@ -226,6 +226,9 @@ body
 		line-height: 1.75
 		@include maxMobile
 			font-size: .95rem
+		@include maxMobilePortrait
+			font-size: .85rem
+		
 
 .sec-title
 	line-height: 1.25
@@ -235,3 +238,26 @@ body
 		transform: skewX(-10deg)
 .theme-btn
 	border-radius: 5px
+
+
+.chooseus-section
+	@include maxMobile
+		padding-top: 0px
+		padding-bottom: 0px
+	.inner-box 
+		@include maxMobile
+			padding: 20px 15px
+		h3
+			@include maxMobile
+				font-size: 20px
+		.icon-box
+			@include maxMobile
+				width: 45px
+				height: 45px
+				display: flex
+				justify-content: center
+				align-items: center
+				margin: 0 auto 15px
+			i
+				@include maxMobile
+					font-size: 30px
