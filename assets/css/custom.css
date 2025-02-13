@@ -36338,7 +36338,6 @@ body p {
   background-size: cover;
   background-position: center center;
   position: absolute;
-  background-attachment: fixed;
 }
 #recentProjects .bg-box::after {
   content: "";
@@ -36450,6 +36449,9 @@ body p {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.testimonialsBlock {
+  overflow: hidden;
+}
 @media (max-width: 766px) {
   .testimonialsBlock {
     padding-bottom: 30px;
