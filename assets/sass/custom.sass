@@ -55,6 +55,8 @@
 body
   width: 100%
   overflow-x: hidden
+  &.noscroll
+    overflow: hidden
 
 main
   position: relative
@@ -77,3 +79,38 @@ main
 
 .main-menu .navigation > li > ul > li > a, .main-menu .navigation > li > .megamenu li > a
   text-transform: none          
+
+
+.main-footer 
+  .widget-section
+    padding-bottom: 20px
+
+
+.footer-bottom 
+  .bottom-inner
+    @media (width < 768px)
+      display: flex
+      flex-flow: column-reverse
+    .social-links
+      @media (width < 768px)
+        margin: 0
+        padding: 0px 0 10px
+        h5
+          font-size: 16px
+        a
+          width: 31px
+          height: 31px
+          display: flex
+          align-items: center
+          justify-content: center
+          text-align: center
+          i
+            font-size: 18px
+            line-height: 1
+            display: block
+    .copyright
+      @media (width < 768px)
+        padding-bottom: 10px
+  .auto-container
+    @media (width < 768px)
+      padding: 0

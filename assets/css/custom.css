@@ -36391,12 +36391,12 @@ body p {
 }
 @media (max-width: 766px) {
   .ctaContact .inner-container {
-    padding: 20px;
+    padding: 30px 20px;
   }
 }
 @media (max-width: 568px) {
   .ctaContact .inner-container {
-    padding: 15px;
+    padding: 30px 15px;
   }
 }
 .ctaContact .image-box {
@@ -36432,6 +36432,14 @@ body p {
 .ctaContact .content-box h2 small {
   font-size: 0.7em;
   color: rgba(0, 0, 0, 0.4);
+  display: block;
+}
+@media (max-width: 568px) {
+  .ctaContact .content-box h2 small {
+    line-height: 1;
+    font-size: 0.6em;
+    margin-bottom: 10px;
+  }
 }
 .ctaContact .content-box h2 span {
   color: white;
@@ -36450,6 +36458,12 @@ body p {
 }
 .ctaContact .content-box .theme-btn::before, .ctaContact .content-box .theme-btn::after {
   background-color: rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 568px) {
+  .ctaContact .content-box .theme-btn {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 766px) {
@@ -36472,8 +36486,20 @@ body p {
     padding: 10px 20px;
   }
 }
+.testimonialsBlock .testimonial-block-two .inner-box .author-box {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
 .testimonialsBlock .testimonial-block-two .inner-box h4 {
   font-weight: 600;
+}
+.testimonialsBlock .testimonial-block-two .inner-box p {
+  padding-bottom: 15px;
+}
+@media (max-width: 568px) {
+  .testimonialsBlock .testimonial-block-two .inner-box p {
+    font-size: 0.85rem;
+  }
 }
 .testimonialsBlock .testimonial-block-two .inner-box .designation {
   color: #2f9b66;
@@ -36514,101 +36540,190 @@ body p {
     color: white;
   }
 }
+@media (width <= 480px) {
+  .main-header .menu-area .mobile-nav-toggler {
+    font-size: 25px;
+  }
+}
 @media (width <= 1200px) {
   .main-header .menu-right-content {
     display: none;
   }
 }
-
-/* Estilos base para ocultar el menú normal y mostrar el menú mobile */
-@media screen and (max-width: 1200px) {
-  /* Estilos del menú mobile */
-  .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 80%;
-    max-width: 300px;
-    height: 100vh;
-    background: #333;
-    color: #fff;
-    transition: left 0.3s ease-in-out;
-    z-index: 9999;
-    padding: 20px;
-  }
-  .mobile-menu.active {
-    left: 0;
-    opacity: 1;
-    visibility: unset;
-  }
-  .mobile-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .mobile-menu ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .mobile-menu ul li a {
-    display: block;
-    padding: 12px 20px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  .mobile-menu ul li a:hover {
-    background: rgba(255, 255, 255, 0.1);
-  }
-  /* Estilos para dropdowns en el menú móvil */
-  .mobile-menu .dropdown > a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .mobile-menu .dropdown-toggle {
-    cursor: pointer;
-    font-size: 20px;
-    padding: 10px;
-  }
-  .mobile-menu .dropdown-toggle::after {
-    display: none;
-  }
-  .mobile-menu .dropdown-menu {
-    display: none;
-    background: rgba(255, 255, 255, 0.1);
-    position: relative;
-  }
-  .mobile-menu .dropdown-menu a {
-    padding-left: 30px;
-  }
-  /* Botón para cerrar el menú */
-  .mobile-menu .close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  /* Fondo oscuro cuando el menú está activo */
-  .mobile-menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
-  }
-  .mobile-menu-overlay.active {
-    opacity: 1;
-    visibility: visible;
+@media (width <= 480px) {
+  .main-header .logo-box {
+    max-width: 160px;
   }
 }
+
+.social-sec {
+  text-align: center;
+  margin-top: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+}
+.social-sec h4, .social-sec a {
+  color: #9ea0a1;
+}
+.social-sec h4 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+.social-sec .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.social-sec .social-links a {
+  display: block;
+  margin: 0 5px;
+}
+.social-sec .social-links a:hover {
+  color: white;
+}
+
+/* Estilos del menú mobile */
+.mobile-menucus {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 85%;
+  max-width: 360px;
+  height: 100vh;
+  background: #161a23;
+  color: #fff;
+  transition: left 0.3s ease-in-out;
+  z-index: 9999;
+  /* Estilos para dropdowns en el menú móvil */
+}
+.mobile-menucus.active {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+.mobile-menucus-head {
+  display: flex;
+  padding: 15px 20px;
+  background-color: #2d2f39;
+  border-bottom: 2px solid #3d4047;
+}
+.mobile-menucus-head img {
+  display: block;
+  max-width: 130px;
+  margin-right: auto;
+}
+.mobile-menucus-head .close-btn {
+  position: relative;
+}
+.mobile-menucus ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-menucus ul li {
+  border-bottom: 1px solid #3d4047;
+}
+.mobile-menucus ul li:last-child {
+  border-bottom: 0;
+}
+.mobile-menucus ul li .btn-one {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 150px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 600;
+}
+.mobile-menucus ul li .btn-one .bi {
+  margin: 0 0 0 10px;
+}
+.mobile-menucus ul li a {
+  display: block;
+  padding: 12px 24px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #9ea0a1;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.mobile-menucus ul li a:hover {
+  color: white;
+}
+.mobile-menucus ul li a span {
+  display: block;
+  line-height: 1;
+}
+.mobile-menucus ul li a .bi {
+  display: block;
+  margin-right: 10px;
+}
+.mobile-menucus .navigation {
+  padding: 10px 0px 0;
+}
+.mobile-menucus .dropdown-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 9px;
+}
+.mobile-menucus .dropdown-toggle::after {
+  display: none;
+}
+.mobile-menucus .dropdown-menu-cus {
+  display: none;
+  background: #2d2f39;
+  position: relative;
+}
+.mobile-menucus .dropdown-menu-cus a {
+  padding-left: 30px;
+  font-size: 0.8em;
+  position: relative;
+}
+.mobile-menucus .dropdown-menu-cus a::before {
+  content: "\f138";
+  position: relative;
+  font-family: "bootstrap-icons" !important;
+  margin-right: 10px;
+}
+
+/* Fondo oscuro cuando el menú está activo */
+.mobile-menucus-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+.mobile-menucus-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 body {
   width: 100%;
   overflow-x: hidden;
+}
+body.noscroll {
+  overflow: hidden;
 }
 
 main {
@@ -36629,6 +36744,49 @@ main {
 
 .main-menu .navigation > li > ul > li > a, .main-menu .navigation > li > .megamenu li > a {
   text-transform: none;
+}
+
+.main-footer .widget-section {
+  padding-bottom: 20px;
+}
+
+@media (width < 768px) {
+  .footer-bottom .bottom-inner {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+}
+@media (width < 768px) {
+  .footer-bottom .bottom-inner .social-links {
+    margin: 0;
+    padding: 0px 0 10px;
+  }
+  .footer-bottom .bottom-inner .social-links h5 {
+    font-size: 16px;
+  }
+  .footer-bottom .bottom-inner .social-links a {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-bottom .bottom-inner .social-links a i {
+    font-size: 18px;
+    line-height: 1;
+    display: block;
+  }
+}
+@media (width < 768px) {
+  .footer-bottom .bottom-inner .copyright {
+    padding-bottom: 10px;
+  }
+}
+@media (width < 768px) {
+  .footer-bottom .auto-container {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */

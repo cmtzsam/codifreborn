@@ -70,7 +70,7 @@
 
 
         <!-- Menú móvil -->
-        <div class="mobile-menu">
+        <div class="mobile-menucus">
             <span class="close-btn">&times;</span>
             <ul class="navigation">
                 <li><a href="codificarlos.html">Inicio</a></li>
@@ -95,16 +95,16 @@
         </div>
 
         <!-- Fondo oscuro cuando el menú está activo -->
-        <div class="mobile-menu-overlay"></div>
+        <div class="mobile-menucus-overlay"></div>
 
     </header>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const mobileNavToggler = document.querySelector(".mobile-nav-toggler");
-            const mobileMenu = document.querySelector(".mobile-menu");
-            const mobileMenuOverlay = document.querySelector(".mobile-menu-overlay");
-            const closeBtn = document.querySelector(".mobile-menu .close-btn");
-            const dropdownToggles = document.querySelectorAll(".mobile-menu .dropdown-toggle");
+            const mobileMenu = document.querySelector(".mobile-menucus");
+            const mobileMenuOverlay = document.querySelector(".mobile-menucus-overlay");
+            const closeBtn = document.querySelector(".mobile-menucus .close-btn");
+            const dropdownToggles = document.querySelectorAll(".mobile-menucus .dropdown-toggle");
 
             // Abrir menú móvil
             mobileNavToggler.addEventListener("click", function () {

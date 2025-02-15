@@ -10,9 +10,9 @@
     border-radius: #{$radiusborder}
     padding: 45px 15px
     @include maxPhablet
-      padding: 20px
+      padding: 30px 20px 
     @include maxMobile
-      padding: 15px
+      padding: 30px 15px
   .image-box
     text-align: center
     .image
@@ -35,6 +35,11 @@
       small
         font-size: .7em
         color: rgba(0,0,0,0.4)
+        display: block
+        @include maxMobile
+          line-height: 1
+          font-size: .6em
+          margin-bottom: 10px
       span
         color: white
         // border-bottom: 3px solid rgba( 255, 255, 255, 0.5)
@@ -51,3 +56,6 @@
       &::before,
       &::after
         background-color: rgba(0, 0, 0, 0.3)
+      @include maxMobile
+        width: 100%
+        max-width: 100%
