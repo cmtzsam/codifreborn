@@ -42,6 +42,7 @@
 @use "oldcss/modulecss/_welcome"
 
 // My styles
+@use 'mystyle/_headercustom'
 @use 'mystyle/_homebanner'
 @use 'mystyle/_funfactsection'
 @use 'mystyle/_about-style-four'
@@ -50,7 +51,7 @@
 @use 'mystyle/_recentprojects'
 @use 'mystyle/_ctacontact'
 @use 'mystyle/_testimonials'
-@use 'mystyle/_headercustom'
+@use 'mystyle/_aboutinpage'
 
 body
   width: 100%
@@ -114,3 +115,11 @@ main
   .auto-container
     @media (width < 768px)
       padding: 0
+
+
+
+.list-style-one 
+  li:before
+    content: "\F26E"
+    font-family: "bootstrap-icons" !important
+    font-size: 18px    

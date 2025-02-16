@@ -1,0 +1,98 @@
+@use "../mystyle/_variables" as *
+
+.aboutInPage
+  .content-box 
+    .accordion-box 
+      .accordion
+        border: 1px solid #f0f0f0
+  // Other module
+  .chooseusInPage
+    padding: 50px 0 20px 
+    // background: linear-gradient(360deg, #f6fef6, transparent)
+    background: #f6fef6
+  
+  // other
+  .dueal-section
+    background-color: #f6fef6
+    padding: 40px 0 80px
+    .content-box 
+      .inner-box 
+        .single-item 
+          h4
+            font-weight: 600
+          p
+            font-size: 1rem
+          .count-text
+            background-color: #{$verde}
+            color: white
+
+  // industries
+  .industries-section
+    padding-bottom: 30px
+    .sec-title
+      background-color: #f6fef6
+      padding-bottom: 150px
+      // border-bottom: 1px solid #ccc
+    .inner-container
+      margin-top: -100px
+  
+  //
+  .about-style-three
+    background-color: transparent
+    h2
+      color: black
+    .content_block_one 
+      .content-box 
+        .text-box
+          p, ul, ul li
+            color: black
+          .theme-btn
+            &::before,
+            &::after
+              display: none
+  //
+  .about-style-three 
+    padding: 60px 0 80px
+    @include maxMobile
+      padding: 30px 0 40px
+    .video_block_two 
+      .video-box 
+        display: flex
+        justify-content: space-between
+        @include mobileToPortrait
+          justify-content: center
+          padding-bottom: 20px
+        .image
+          &-1
+            transition: none
+            &::before
+              display: none
+            @include maxTabletPortrait
+              width: 80%
+            @include mobileToPortrait
+              max-width: 350px
+          &-2
+            transition: none
+            @include mobileToPortrait
+              right: 15%
+            &::before
+              display: none
+            @include maxTabletPortrait
+              position: absolute
+              width: 50%
+            @include mobileToPortrait
+              max-width: 200px
+          
+    .content_block_one 
+      .content-box 
+        .text-box
+          p, ul, ul li
+            color: black
+          .theme-btn
+            &::before,
+            &::after
+              display: none
+            @include maxMobile
+              max-width: 100%
+              width: 100%
+       
