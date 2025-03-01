@@ -38,3 +38,134 @@
       margin-top: -30px
       color: white
       font-weight: 600
+
+
+// Index projects
+.portfolioIntPage
+  .blog-details-content
+    &.tagcont
+      .inner-box
+        margin: 0
+        padding: 0
+        &::before
+          display: none
+        .lower-content
+          padding-top: 0
+  .service-block-one 
+    .inner-box 
+      &::before
+        border-radius: 5px
+      .image-box
+        border-radius: 5px
+        img
+          border-radius: 5px
+      .lower-content 
+        text-align: left
+        p
+          margin: 0
+        .theme-btn
+          background: var(--secondary-color)
+          border-color: var(--secondary-color)
+          color: white
+  // display: none
+
+
+// Detail project
+.portfolioDetailPage
+  .intro-section
+    padding-bottom: 0
+    padding-top: 80px
+    @include maxMobile
+      padding-top: 30px
+    .inner-box
+      @include maxMobile
+        margin-bottom: 10px
+      .lower-content
+        padding-top: 0
+    .content-box
+      h1
+        font-size: 6rem
+        @include maxTabletPortrait
+          font-size: 5rem
+        @include maxMobile
+          font-size: 3rem
+        @include maxMobilePortrait
+          font-size: 2.25rem
+          padding-bottom: 10px
+      h2
+        @include maxMobile
+          font-size: 1.75rem
+        @include maxMobilePortrait
+          font-size: 1.5rem
+  &--body
+    padding: 40px 0
+    @include maxMobile
+      padding: 25px 20px 0
+    @include maxMobileLandscape
+      padding: 20px 10px 0px
+    .blog-details-content
+      width: 100%
+      max-width: 750px
+      margin: 0 auto
+      blockquote
+        @include maxTabletPortrait
+          padding: 30px
+        h3
+          padding-left: 0
+          &::before
+            display: none
+    .text-box
+      p
+        padding-bottom: 25px
+
+.proyectCardBig
+  position: relative
+  z-index: 5
+
+  &--box
+    background-color: white
+    border: 1px solid #ddd
+    display: flex
+    align-items: center
+    padding: 50px 0
+    width: 100%
+    box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.06)
+    border-radius: 10px
+    margin: 0 auto
+    @include tabletPortraitTo1280
+      padding: 30px 0
+    @include maxTabletPortrait
+      border-radius: 0
+      display: block
+      padding: 0
+    
+  &--img
+    width: 100%
+    max-width: 570px
+    margin-right: auto
+    padding-left: 50px
+    @include maxTabletPortrait
+      padding-left: 0
+      max-width: 100%
+    img
+      width: 100%
+      border-radius: 5px
+      @include maxTabletPortrait
+        border-radius: 0
+        width: 100%
+  &--details
+    width: 100%
+    padding: 0 50px
+    @include tabletPortraitTo1280
+      font-size: .9rem
+    @include maxTabletPortrait
+      padding: 30px 30px 15px
+    @include maxMobile
+      font-size: 0.95rem
+    @include maxMobileLandscape
+      padding: 15px
+    li
+      @include maxMobileLandscape
+        flex-wrap: wrap
+
+    

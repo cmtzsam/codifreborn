@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Codificarlos - Portfolio</title>
+    <!-- Fav Icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+
+<!-- page wrapper -->
+
+<body>
+
+
+    <!-- main header -->
+    <header class="main-header header-style-five">
+
+        <!-- header-lower -->
+        <div class="header-lower">
+            <div class="auto-container">
+                <div class="outer-box">
+                    <figure class="logo-box"><a href="codificarlos.html"><img src="assets/images/newlogo.png"
+                                alt="Codificarlos" width="220"></a></figure>
+                    <div class="menu-area">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <i class="bi bi-list"></i>
+                        </div>
+                        <nav class="main-menu navbar-expand-md navbar-light clearfix">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li><a href="codificarlos.html">Inicio</a></li>
+                                    <li><a href="codificarlos-acercade.html">Acerca de</a></li>
+                                    <li class="current"><a href="codificarlos-portfolio.html">Proyectos</a></li>
+                                    <li class="dropdown">
+                                        <a href="#!">Planes y precios</a>
+                                        <ul>
+                                            <li><a href="codificarlos-planes-1.html">Sitios informativos</a></li>
+                                            <li><a href="codificarlos-planes-2.html">Tiendas en línea</a></li>
+                                            <li><a href="codificarlos-planes-3.html">Mantenimiento y soporte</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="codificarlos-blog-list.html">Blog</a>
+                                        <ul>
+                                            <li><a href="codificarlos-blog-categoria.html">Cate.1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="menu-right-content">
+                        <div class="search-btn mr_20"><button class="search-toggler"><i class="icon-1"></i></button>
+                        </div>
+                        <div class="btn-box"><a href="codificarlos-contacto.html" class="theme-btn btn-one"><b
+                                    class="fw-normal text-light">Contactanos</b></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Menú móvil -->
+        <div class="mobile-menucus ">
+            <div class="mobile-menucus-head">
+                <img src="./assets/images/newlogo.png" alt="">
+                <span class="close-btn">
+                    <i class="bi bi-x-lg"></i>
+                </span>
+            </div>
+            <ul class="navigation">
+                <li><a href="codificarlos.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+                <li><a href="codificarlos-acercade.html"><i class="bi bi-people"></i> Acerca de</a></li>
+                <li><a href="codificarlos-portfolio.html"><i class="bi bi-briefcase"></i> Proyectos</a></li>
+                <li class="dropdown">
+                    <!--  -->
+                    <a href="#">
+                        <i class="bi bi-tags"></i> Planes y precios
+                        <span class="dropdown-toggle">+</span>
+                    </a>
+                    <ul class="dropdown-menu-cus">
+                        <li><a href="codificarlos-planes-1.html">Sitios informativos</a></li>
+                        <li><a href="codificarlos-planes-2.html">Tiendas en línea</a></li>
+                        <li><a href="codificarlos-planes-3.html">Mantenimiento y soporte</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="bi bi-newspaper"></i>Blog <span class="dropdown-toggle">+</span></a>
+                    <ul class="dropdown-menu-cus">
+                        <li><a href="codificarlos-blog-categoria.html">Cate.1</a></li>
+                    </ul>
+                </li>
+                <li><a href="codificarlos-contacto.html" class="theme-btn btn-one"> ¡Contáctanos! <i
+                            class="bi bi-arrow-right"></i></a></li>
+            </ul>
+            <div class="social-sec">
+                <h4 class="text-center">Siguenos</h4>
+                <div class="social-links">
+                    <a href="index.html"><i class="bi bi-facebook"></i></a>
+                    <a href="index.html"><i class="bi bi-instagram"></i></a>
+                    <a href="index.html"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fondo oscuro cuando el menú está activo -->
+        <div class="mobile-menucus-overlay"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const mobileNavToggler = document.querySelector(".mobile-nav-toggler");
+                const mobileMenu = document.querySelector(".mobile-menucus");
+                const mobileMenuOverlay = document.querySelector(".mobile-menucus-overlay");
+                const closeBtn = document.querySelector(".mobile-menucus .close-btn");
+                const dropdownToggles = document.querySelectorAll(".mobile-menucus .dropdown-toggle");
+
+                // Abrir menú móvil
+                mobileNavToggler.addEventListener("click", function () {
+                    mobileMenu.classList.add("active");
+                    mobileMenuOverlay.classList.add("active");
+                    document.querySelector('body').classList.add('noscroll');
+                });
+
+                // Cerrar menú móvil
+                closeBtn.addEventListener("click", function () {
+                    mobileMenu.classList.remove("active");
+                    mobileMenuOverlay.classList.remove("active");
+                    document.querySelector('body').classList.contains('noscroll') && document.querySelector('body').classList.remove('noscroll');
+                });
+
+                // Cerrar al hacer clic fuera del menú
+                mobileMenuOverlay.addEventListener("click", function () {
+                    mobileMenu.classList.remove("active");
+                    mobileMenuOverlay.classList.remove("active");
+                    document.querySelector('body').classList.contains('noscroll') && document.querySelector('body').classList.remove('noscroll');
+                });
+
+                // Manejo de dropdowns en el menú móvil
+                dropdownToggles.forEach(function (toggle) {
+                    toggle.addEventListener("click", function () {
+                        const dropdownMenu = this.parentElement.nextElementSibling;
+                        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+                        this.textContent = dropdownMenu.style.display === "block" ? "-" : "+";
+                    });
+                });
+            });
+
+        </script>
+    </header>
+
+    <!-- main-header end -->
+    <main class="portfolioDetailPage">
+
+        <!-- intro-section -->
+        <section class="intro-section centred">
+            <div class="pattern-layer" style="background-image: url();">
+                <img src="assets/images/shape/shape-25.png" alt="">
+            </div>
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="blog-details-content">
+                        <div class="news-block-two">
+                            <div class="inner-box">
+                                <div class="lower-content text-center pt_0">
+                                    <span class="category bg-dark text-white">Tienda online</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <h1 class="pb_30">Kidsheroes</h1>
+                    <h2 class="pb_60">- Sé el heroe de tu bebé -</h2>
+
+                </div>
+            </div>
+        </section>
+        <!-- intro-section end -->
+
+        <section class="proyectCardBig">
+            <div class="container">
+
+                <div class="proyectCardBig--box">
+
+                    <div class="proyectCardBig--img">
+                        <img src="assets/images/proy1.jpg" alt="Imagen" class="img-fluid">
+                    </div>
+
+                    <ul class="proyectCardBig--details">
+                        <li class="d-flex pb-3 border-bottom">
+                            <strong class="me-auto">
+                                <i class="bi bi-check2-circle"></i> Solución implementada:
+                            </strong>
+                            <span> 
+                                Comercio eléctronico
+                            </span>
+                        </li>
+                        <li class="d-flex py-3 border-bottom">
+                            <strong class="me-auto">
+                                <i class="bi bi-lightning-charge-fill"></i> Tecnologías utilizadas:
+                            </strong>
+                            <span> 
+                                WordPress y Woocommerce
+                            </span>
+                        </li>
+                        <li class="d-flex py-3 border-bottom">
+                            <strong class="me-auto">
+                                <i class="bi bi-code-slash"></i> Codificado en:
+                            </strong>
+                            <span> 
+                                PHP y JavaScript
+                            </span>
+                        </li>
+                        <li class="d-flex py-3 border-bottom">
+                            <strong class="me-auto">
+                                <i class="bi bi-calendar"></i> Fecha de publicación:
+                            </strong>
+                            <span> 
+                                01/01/2029
+                            </span>
+                        </li>
+                        <li class="d-flex pt-3">
+                            <strong class="me-auto">
+                                <i class="bi bi-link-45deg"></i>
+                                Enlace:
+                            </strong>
+                            <a href="#!" target="_blank"> 
+                                <u>www.kidsheroes.com.mx </u>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+        <section class="portfolioDetailPage--body">
+            <div class="container">
+
+                <div class="blog-details-content">
+                    <div class="news-block-two">
+
+                        <div class="inner-box">
+                            <div class="text-box mb_40">
+                                <p >Another post might tackle technical questions relevant to your
+                                    industry, offering strategies for breaking down complex problems and
+                                    showcasing problem-solving skills. By breaking down each type of question
+                                    and offering practical advice, sample answers.</p>
+                                <p >tips for tailoring responses to align with the company's values
+                                    and expectations, this blog series can become an essential resource for
+                                    candidates aiming to succeed in their interviews and secure their desired
+                                    positions.</p>
+                                <blockquote>
+                                    <div class="icon-box"><i class="icon-36"></i></div>
+                                    <p class="text-white pb-4">Increíble calidad y servicio, te orienta e investiga para obtener la
+                                        mejor
+                                        solución a las
+                                        propuestas que plantees.</p>
+                                    <h3 class="lh-sm">
+                                        Javier Garza <br>
+                                        <small class="text-white-50 fw-light">Propietario y fundador</small>
+                                    </h3>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- main-footer -->
+        <footer class=" main-footer light-footer ">
+            <div class="widget-section p_relative pt_40 pb_40">
+                <div class="auto-container">
+                    <div class="row clearfix">
+                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget logo-widget mr_30">
+                                <p class="footer-logo mb_20 text-start">
+                                    <a href="index.html"><img src="assets/images/newlogo-bn.png" alt="Codificarlos"
+                                            width="280"></a>
+                                </p>
+                                <p>Nos esforzamos por brindarte confianza, tarifas accesibles y, sobre todo, garantizar
+                                    tu
+                                    seguridad y comodidad en cada paso del proceso.</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget">
+                                <div class="widget-title">
+                                    <h4>Conoce más</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="codificarlos-acercade.html">Acerca de</a></li>
+                                        <li><a href="codificarlos-portfolio.html">Proyectos</a></li>
+                                        <!-- <li><a href="#!">Industrias</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget">
+                                <div class="widget-title">
+                                    <h4>Planes & precios</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="#!">Sitios informativos</a></li>
+                                        <li><a href="#!">E-commerce</a></li>
+                                        <li><a href="#!">Suscripcion</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget">
+                                <div class="widget-title">
+                                    <h4>Blog</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="#!">Categoria 1</a></li>
+                                        <li><a href="#!">Categoria 2</a></li>
+                                        <li><a href="#!">Categoria 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget">
+                                <div class="widget-title">
+                                    <h4>Ayuda & soporte</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="#!">Contacto</a></li>
+                                        <!-- <li><a href="#!">Preguntas frecuentes</a></li> -->
+                                        <!-- <li><a href="#!">Política de privacidad</a></li> -->
+                                        <!-- <li><a href="index.html">Términos y condiciones</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="auto-container py_20">
+                    <div class="bottom-inner">
+                        <div class="copyright">
+                            <p>Codificarlos &copy; 2025 </p>
+                        </div>
+                        <ul class="social-links">
+                            <li>
+                                <h5>Siguenos:</h5>
+                            </li>
+                            <li><a href="index.html"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="index.html"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="index.html"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- main-footer end -->
+
+        <!--Scroll to top-->
+        <div class="scroll-to-top">
+            <svg class="scroll-top-inner" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+
+    </main>
+
+
+</body><!-- End of .page_wrapper -->
+
+</html>
