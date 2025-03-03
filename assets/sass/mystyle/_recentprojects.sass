@@ -42,17 +42,45 @@
 
 // Index projects
 .portfolioIntPage
+  .service-section
+    @include maxMobile
+      padding-top: 30px
+
   .blog-details-content
     &.tagcont
+      .news-block-two
+        @include maxMobile
+          padding-bottom: 15px!important
       .inner-box
         margin: 0
         padding: 0
+        @include phabletToTablet
+          flex-flow: column-reverse
+          align-items: flex-start!important
+        @include maxMobile
+          align-items: flex-start!important
         &::before
           display: none
         .lower-content
           padding-top: 0
+          @include phabletToTablet
+            padding-bottom: 10px
+          @include maxMobile
+            padding-bottom: 10px
+          .category
+            @include phabletToTablet
+              font-size: .9rem
+              padding: 3px 15px
+            @include maxMobile
+              font-size: .9rem
+              padding: 3px 15px
   .service-block-one 
     .inner-box 
+
+      @include maxMobile
+        padding: 0px 20px 20px
+        flex-flow: column-reverse
+
       &::before
         border-radius: 5px
       .image-box
@@ -61,12 +89,20 @@
           border-radius: 5px
       .lower-content 
         text-align: left
+        @include maxMobile
+          padding-top: 20px
         p
           margin: 0
         .theme-btn
           background: var(--secondary-color)
           border-color: var(--secondary-color)
           color: white
+          @include maxMobile
+            display: block
+            max-width: 360px
+            width: 100%
+            margin-left: auto
+            margin-right: auto
   // display: none
 
 

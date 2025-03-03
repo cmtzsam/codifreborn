@@ -48,7 +48,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
+                                    <li class="dropdown d-none">
                                         <a href="codificarlos-blog-list.html">Blog</a>
                                         <ul>
                                             <li><a href="codificarlos-blog-categoria.html">Cate.1</a></li>
@@ -162,28 +162,30 @@
     <main>
 
         <!-- banner-section -->
+         <script src="assets/js/particles.min.js"></script>
+         <script>
+            particlesJS.load('tsparticles', 'assets/json/particles.json', function() {
+                // particlesJS.load('tsparticles', 'http://localhost:4000/codificarlos/particles.json', function() {
+                console.log('callback - particles.js config loaded');
+            });            
+         </script>
         <section class="banner-section banner-style-three p_relative bannercodif ">
             <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-10.png);"></div>
-
-            <div class="auto-container">
+            <div id="tsparticles" class="tsparticles"></div>
+            <div class="auto-container" style="position: relative;">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                        <div class="content-box">
-                            <h1 class="text-dark"><span>Soluciones web</span> personalizadas para impulsar tu negocio
+                    <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                        <div class="content-box mw-100">
+                            <h1 class="text-center">
+                                Soluciones web personalizadas para impulsar tu negocio
                             </h1>
-                            <p>Somos especialistas en programación web, desarrollamos plataformas a la medida,
-                                garantizando calidad técnica y adaptabilidad para cualquier tipo de proyecto.</p>
-                            <div class="btn-box">
-                                <a href="#!" class="theme-btn btn-one mr_20">
-                                    Descubre más
-                                    <!-- <i class="bi bi-arrow-down-right"></i> -->
-                                </a>
-
+                            <div class="theScroll">
+                                <a href="#introHomeAbout"><span>&nbsp;</span></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                    <div class="col-lg-4 col-md-12 col-sm-12 image-column d-none">
                         <div class="image-inner">
                             <!-- Solo espacio -->
                         </div>
@@ -195,7 +197,7 @@
         <!-- banner-section end -->
 
         <!-- about-style-four -->
-        <section class=" about-style-four ">
+        <section class=" about-style-four " id="introHomeAbout">
             <div class="auto-container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
@@ -236,7 +238,7 @@
                                 <div class="sec-title pb_40 sec-title-animation animation-style2">
                                     <span class="sub-title mb_10 title-animation">Acerca de</span>
                                     <h2 class="title-animation mb_20 mt_10"><span>Codificarlos</span>, soluciones
-                                        digitales a medida.</h2>
+                                        digitales a la medida.</h2>
                                     <p class="title-animation">En Codificarlos combinamos innovación, eficiencia y
                                         acompañamiento estratégico para hacer crecer tu negocio en el mundo digital. Nos
                                         especializamos en Shopify, WordPress y HubSpot, creando experiencias digitales
@@ -715,13 +717,13 @@
 
 
         <!-- news-section -->
-        <section class="news-section pt_0 pb_50" style="z-index: 3;">
+        <section class="news-section pt_0 pb_50 d-none" style="z-index: 3;">
             <div class="auto-container">
                 <div class="sec-title centred pb_30 sec-title-animation animation-style2">
                     <span class="sub-title mb_10 title-animation">Blog</span>
                     <h2 class="title-animation">Últimas noticias</h2>
                 </div>
-                <div class="row clearfix">
+                <div class="row clearfix ">
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
                         <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms"
                             data-wow-duration="1500ms">
@@ -780,7 +782,7 @@
         <div class="widget-section p_relative pt_40 pb_40">
             <div class="auto-container">
                 <div class="row clearfix">
-                    <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+                    <div class="col-lg-4 col-md-6 col-sm-12 footer-column me-auto">
                         <div class="footer-widget logo-widget mr_30">
                             <p class="footer-logo mb_20 text-start">
                                 <a href="index.html"><img src="assets/images/newlogo-bn.png" alt="Codificarlos"
@@ -819,7 +821,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-12 footer-column">
+                    <!-- <div class="col-lg-2 col-md-4 col-sm-12 footer-column">
                         <div class="footer-widget links-widget">
                             <div class="widget-title">
                                 <h4>Blog</h4>
@@ -832,7 +834,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-2 col-md-4 col-sm-12 footer-column">
                         <div class="footer-widget links-widget">
                             <div class="widget-title">
