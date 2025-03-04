@@ -36756,7 +36756,7 @@ body p {
 
 .portfolioDetailPage .intro-section {
   padding-bottom: 0;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 @media (max-width: 568px) {
   .portfolioDetailPage .intro-section {
@@ -36773,6 +36773,7 @@ body p {
 }
 .portfolioDetailPage .intro-section .content-box h1 {
   font-size: 6rem;
+  margin: 0 auto 0;
 }
 @media (max-width: 991px) {
   .portfolioDetailPage .intro-section .content-box h1 {
@@ -37298,6 +37299,117 @@ main {
   content: "\f26e";
   font-family: "bootstrap-icons" !important;
   font-size: 18px;
+}
+
+.plansPage .intro-section {
+  padding: 50px 0;
+}
+.plansPage .intro-section h4 {
+  font-family: "Inter", sans-serif;
+  line-height: 1.75;
+  max-width: 80%;
+  margin: 0 auto;
+  opacity: 0.75;
+}
+.plansPage .dueal-section {
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+}
+.plansPage .content_block_two .content-box .inner-box .single-item h4 {
+  font-weight: 600;
+}
+.plansPage .content_block_two .content-box .inner-box .single-item .count-text {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.plansPage .content_block_three .content-box .accordion-box .accordion {
+  border: 1px solid #ebebeb;
+}
+.plansPage .content_block_three .content-box .accordion-box .accordion .acc-btn {
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+}
+.plansPage .content_block_three .content-box .accordion-box .accordion .acc-btn .icon-box {
+  position: relative;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  margin: 0;
+  margin-left: auto;
+}
+.plansPage .pricing-block-one .pricing-table {
+  padding: 0 0;
+}
+.plansPage .pricing-block-one .pricing-table .table-header h3 {
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 0;
+}
+.plansPage .pricing-block-one .pricing-table .table-header h2 {
+  text-align: center;
+  padding: 30px;
+  background-color: #dff0e8;
+  color: var(--secondary-color);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.plansPage .pricing-block-one .pricing-table .table-header h2 span {
+  display: block;
+  margin: 0 0 0 10px;
+}
+.plansPage .pricing-block-one .pricing-table .table-body {
+  padding: 15px 30px 35px;
+}
+.plansPage .pricing-block-one .pricing-table .table-body .table-footer a {
+  border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: 600s;
+}
+.plansPage .pricing-block-one .pricing-table .list-item li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
+  padding: 0;
+}
+.plansPage .pricing-block-one .pricing-table .list-item li:last-child {
+  margin-bottom: 0;
+}
+.plansPage .pricing-block-one .pricing-table .list-item li i {
+  position: relative;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 14px;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.plansPage .pricing-block-one .pricing-table .list-item li p {
+  margin: 0;
+  line-height: 1.5;
+  width: 100%;
+  padding-left: 10px;
+  position: relative;
+  top: -3px;
 }
 
 /*# sourceMappingURL=custom.css.map */
